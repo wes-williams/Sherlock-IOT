@@ -26,3 +26,4 @@ The server is a Node.js app that can be easily run locally or on IBM BlueMix's C
 
 TBD
 
+Portions of this work are reproduced from work created and shared by IBM. IBM is not otherwise affiliated with the development of this work.
