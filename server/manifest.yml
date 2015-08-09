@@ -1,0 +1,37 @@
+---
+declared-services:
+  concept-insights-beta:
+    label: concept_insights
+    plan: free
+  message-resonance-beta:
+    label: message_resonance_beta
+    plan: message_resonance_free_plan
+  personality-insights-standard:
+    label: personality_insights
+    plan: standard
+  tone-analyzer-beta:
+    label: tone_analyzer 
+    plan: experimental 
+  relationship-extraction-beta:
+    label: relationship_extraction 
+    plan: relationship_extraction_free_plan 
+  visual-recognition-beta:
+    label: visual_recognition 
+    plan: free 
+  question-and-answer-beta:
+    label: question_and_answer 
+    plan: question_and_answer_free_plan
+
+applications:
+- name: sherlock-iot
+  command: node server.js
+  path: .
+  memory: 256M
+  services:
+  - concept-insights-beta
+  - message-resonance-beta
+  - personality-insights-standard
+  - tone-analyzer-beta
+  - relationship-extraction-beta
+  - visual-recognition-beta
+  - question-and-answer-beta
