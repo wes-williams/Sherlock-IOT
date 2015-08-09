@@ -16,6 +16,12 @@ The Watson APIs focus on cognition. Some might be useful for deduction from clue
   * [Visual Recognition](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/visual-recognition.html) Categorizes content of images
   * [Question and Answer](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/visual-recognition.html) Interprets and answers questions (Healthcare & Travel topics)
 
+## Setup
+
+### Server
+
+The server is a Node.js app that can be easily run locally or on IBM BlueMix's Cloud Foundry PaaS as documented [here](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-full-nodejs.shtml#prepare). See `server/config/auth.js` and `server/manifest.yaml` for services to create and configure.
+
 ## License
 
 TBD
