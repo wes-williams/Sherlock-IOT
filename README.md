@@ -6,7 +6,7 @@ Materials created for the Massive Online/Offline Collaboration of [Sherlock Holm
 
 ### [Hackpad API](https://hackpad.com/Hackpad-API-v1.0-k9bpcEeOo2Q)
 
-Hackpad has an API and [Zapier channel][https://zapier.com/zapbook/hackpad/]. The collaboration is heavily using [sherlock.hackpad.com](https://sherlock.hackpad.com).
+Hackpad has an API and [Zapier channel](https://zapier.com/zapbook/hackpad/]. The collaboration is heavily using [sherlock.hackpad.com](https://sherlock.hackpad.com).
 
 ### [IBM Watson APIs](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/services-catalog.html)
 
