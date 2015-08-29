@@ -5,6 +5,7 @@ var express  = require('express'),
   authConfig = require('./config/auth'),
   basicAuth  = require('basic-auth'),
   bodyParser = require('body-parser'),
+  Hackpad    = require('hackpad'),
   watson     = require('watson-developer-cloud');
 
 // configure express
@@ -12,6 +13,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // create service wrappers
+var hackpadCreds = authConfig.getServiceCreds('hackpad');
+var hackpad = new Hackpad(hackpadCreds.clientId, hackpadCreds.secret, hackpadCreds.options);
+// watson specific
 var conceptInsights = watson.concept_insights(authConfig.getServiceCreds('concept_insights'));
 var messageResonance = watson.message_resonance(authConfig.getServiceCreds('message_resonance'));
 var personalityInsights = watson.personality_insights(authConfig.getServiceCreds('personality_insights'));

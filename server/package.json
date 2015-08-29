@@ -4,6 +4,7 @@
   "description": "Sherlock IOT MOOC API",
   "main": "./server",
   "dependencies": {
+    "hackpad": "0.0.3",
     "watson-developer-cloud": "0.9.27",
     "express": "4.13.3",
     "basic-auth": "1.0.3",

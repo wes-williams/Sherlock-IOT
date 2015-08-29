@@ -11,6 +11,14 @@ authConfig.basicAuth = {
 };
 
 var services = {
+  'hackpad' : {
+    clientId: '',
+    secret: '',
+    options: { site: 'sherlock' }
+  }
+};
+
+var ibmServices = {
   'concept_insights' : {
     version: 'v1',
     username: '',
@@ -51,8 +59,11 @@ var services = {
 authConfig.getServiceCreds = function(service) {
   // if bluemix credentials exists, then override local
   if(services[service]) {
-    return extend(services[service], 
-                  bluemix.getServiceCreds(services[service]));
+    return services[service];
+  }
+  else if(ibmServices[service]) {
+    return extend(ibmServices[service], 
+                  bluemix.getServiceCreds(ibmServices[service]));
   }
   return {};
 };
