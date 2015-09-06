@@ -423,3 +423,20 @@ Small Device Styles
   }
 
 }
+
+
+
+/*******************************************************************************
+Customizations
+*******************************************************************************/
+
+.article_date {
+  background-color:#007edf;
+  color:white;
+  font-weight:bold;
+  padding:5px 10px 5px 10px;
+  margin:0px 10px 0px 0px;
+  float:left;
+  border-radius:5px;
+}
+
